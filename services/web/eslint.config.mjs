@@ -9,8 +9,11 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
+import prettier from "eslint-config-prettier";
+
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  prettier,
 ];
 
 export default eslintConfig;
