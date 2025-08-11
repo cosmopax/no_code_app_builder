@@ -55,10 +55,20 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center">
+      <div className="relative z-[-1] flex place-items-center mb-16">
         <h1 className="text-4xl sm:text-6xl font-bold text-center">
           No-code Builder
         </h1>
+      </div>
+
+      <div className="w-full max-w-2xl">
+        <h2 className="text-2xl font-semibold mb-4 text-center">Projects</h2>
+        <div className="grid grid-cols-1 gap-4">
+          <a href="/kanban?project_id=1" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-200">
+            <h3 className="text-xl font-bold mb-2">Sample Project</h3>
+            <p className="text-gray-600">Click to view the Kanban board for this project.</p>
+          </a>
+        </div>
       </div>
     </main>
   );
